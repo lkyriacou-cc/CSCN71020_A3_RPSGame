@@ -49,5 +49,17 @@ namespace RPSTest
 			Assert::AreEqual("Invalid", playRPS(p1, paper));
 			Assert::AreEqual("Invalid", playRPS(p1, scissors));
 		}
+
+		TEST_METHOD(RPS_vs_Invalid_Invalid)
+		{
+			char rock[] = "Rock";
+			char paper[] = "Paper";
+			char scissors[] = "Scissors";
+			char p2[] = "Banana"; //Any random object that isn't rock, paper, or scissors
+
+			Assert::AreEqual("Invalid", playRPS(rock, p2));
+			Assert::AreEqual("Invalid", playRPS(paper, p2));
+			Assert::AreEqual("Invalid", playRPS(scissors, p2));
+		}
 	};
 }

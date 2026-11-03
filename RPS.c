@@ -9,6 +9,11 @@ char* playRPS(char player1[], char player2[])
 		return "Invalid";
 	}
 
+	if (strcmp(player2, "Rock") != 0 && strcmp(player2, "Paper") != 0 && strcmp(player2, "Scissors") != 0)
+	{
+		return "Invalid";
+	}
+
 
 	if (strcmp(player1, player2) == 0)
 	{
