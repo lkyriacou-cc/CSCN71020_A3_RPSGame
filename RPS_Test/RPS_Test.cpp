@@ -71,5 +71,25 @@ namespace RPSTest
 			Assert::AreEqual("Player2", playRPS(rock, paper));
 			Assert::AreEqual("Player2", playRPS(paper, scissors));
 		}
+
+		TEST_METHOD(Player1Wins_AllOtherCombitnations)
+		{
+			char rock[] = "Rock";
+			char paper[] = "Paper";
+			char scissors[] = "Scissors";
+
+			Assert::AreEqual("Player1", playRPS(paper, rock));
+			Assert::AreEqual("Player1", playRPS(scissors, paper));
+		}
+
+		TEST_METHOD(Lowercase_And_SameInvalidWord_Invalid)
+		{
+			char lowercaserock[] = "rock";
+			char rock[] = "Rock";
+			char Banana[] = "Banana"; // Any random object other than rock, paper, or scissors
+
+			Assert::AreEqual("Invalid", playRPS(lowercaserock, rock));
+			Assert::AreEqual("Invalid", playRPS(Banana, Banana));
+		}
 	};
 }
