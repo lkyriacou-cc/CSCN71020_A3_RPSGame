@@ -61,5 +61,15 @@ namespace RPSTest
 			Assert::AreEqual("Invalid", playRPS(paper, p2));
 			Assert::AreEqual("Invalid", playRPS(scissors, p2));
 		}
+
+		TEST_METHOD(Player2Wins_AllOtherCombitnations)
+		{
+			char rock[] = "Rock";
+			char paper[] = "Paper";
+			char scissors[] = "Scissors";
+
+			Assert::AreEqual("Player2", playRPS(rock, paper));
+			Assert::AreEqual("Player2", playRPS(paper, scissors));
+		}
 	};
 }
