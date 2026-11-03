@@ -21,5 +21,13 @@ namespace RPSTest
 			const char* result = playRPS(p1, p2);
 			Assert::AreEqual("Player1", result);
 		}
+		
+		TEST_METHOD(Scissors_vs_Rock_Player2Wins)
+		{
+			char p1[] = "Scissors";
+			char p2[] = "Rock";
+			const char* result = playRPS(p1, p2);
+			Assert::AreEqual("Player2", result);
+		}
 	};
 }
