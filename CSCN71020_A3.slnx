@@ -3,6 +3,6 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="CSCN71020_A3.vcxproj" />
+  <Project Path="CSCN71020_A3.vcxproj" Id="2f61e058-295e-4563-ab5d-383a1b594259" />
   <Project Path="RPS_Test/RPS_Test.vcxproj" />
 </Solution>

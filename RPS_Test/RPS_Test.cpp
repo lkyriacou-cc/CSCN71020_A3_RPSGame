@@ -37,5 +37,17 @@ namespace RPSTest
 			const char* result = playRPS(p1, p2);
 			Assert::AreEqual("Draw", result);
 		}
+
+		TEST_METHOD(InvalidWord_vs_RPS_Invalid)
+		{
+			char p1[] = "Banana"; //Any random object that isn't rock, paper, or scissors
+			char rock[] = "Rock";
+			char paper[] = "Paper";
+			char scissors[] = "Scissors";
+			
+			Assert::AreEqual("Invalid", playRPS(p1, rock));
+			Assert::AreEqual("Invalid", playRPS(p1, paper));
+			Assert::AreEqual("Invalid", playRPS(p1, scissors));
+		}
 	};
 }
