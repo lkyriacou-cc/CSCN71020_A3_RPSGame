@@ -4,4 +4,5 @@
     <Platform Name="x86" />
   </Configurations>
   <Project Path="CSCN71020_A3.vcxproj" />
+  <Project Path="RPS_Test/RPS_Test.vcxproj" />
 </Solution>
